@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    outline: none;
+    text-decoration: none;
+  }
+
+  .app {
+    background-color: #eee9;
+  }
+
+  
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40px;
+    background-color: #3339;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px 12px;
+    background-color: rgb(168, 168, 168);
+    border-radius: 5px;
+    transition: background-color .5s ease-in;
+}
+.navbar button{
+    padding: 5px 12px;
+    background-color: rgb(192, 170, 170);
+    border-radius: 5px;
+}
+.navbar a:hover {
+    background-color: #4f4f4f;
+    
+}
+.auth-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+  
+.auth-container > h1 {
+    font-size: 2em;
+    margin: 24px;
+}
+  
+.auth-container > p {
+    margin: 16px;
+    text-decoration: underline;
+}
+  
+.auth-container > form {
+    border: 1px solid #3339;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #aaa9;
+  
+    display: flex;
+    flex-direction: column;
+}
+  
+.auth-container > form > input {
+    margin: 16px 8px;
+    padding: 8px;
+    border-radius: 4px;
+}
+  
+.auth-container > form > button {
+    margin: 16px 8px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* homepage */
+
+.homepage > h1{
+    text-align: center;
+    font-size: 3.5vw;
+    margin: 20px 0px;
+}
+.IssueList {
+
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+}
+
+.issue-container {
+    border: 1px solid #b9b9b9;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.issue{
+    
+    border-bottom: 1px solid #b9b9b9;
+    width: 100%;
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 15px;
+    max-height: 200px;
+}
+.issue > .container{
+    max-width: 200px;
+    min-width: 150px;
+    float: left;
+    
+}
+.issue h2 {
+    margin-bottom: 10px;
+}
+.issue > .container img{
+    width: 100%;
+}
+.issue > .text{
+    padding: 0px 15px;
+    width: 65%;
+    float: left;
+}
+.issue > .likes{
+    width: 20%;
+    float: left;
+}
+.likes button {
+    margin-bottom: 3px;
+}
+
+
+.comments {
+    padding: 2px;
+    max-height: 250px;
+    overflow-y: scroll;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #b9b9b9;
+}
+/* comments */
+#add-comment-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#add-comment-form input {
+    padding: 2px 5px;
+    width: 90%;
+
+}
+#add-comment-form div{
+    display: inline-block;
+    min-width: 100px im !important;
+}
+#add-comment-form button {
+    padding: 2px 5px;
+    width: 100%;
+
+   
+}
+.comments p{
+    padding: 5px 0px;
+}
+.testing{
+    height: 50px;
+}
+.addNewPost h1{
+    text-align: center;
+    margin: 20px 0px;
+}
+.addNewPost form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+.addNewPost form input{
+    padding: 3px 5px;
+    margin-bottom: 5px;
+}

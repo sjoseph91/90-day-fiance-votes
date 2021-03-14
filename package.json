@@ -1,0 +1,30 @@
+{
+  "name": "90-day-finace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjoseph91/90-day-fiance-votes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sjoseph91/90-day-fiance-votes/issues"
+  },
+  "homepage": "https://github.com/sjoseph91/90-day-fiance-votes#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.19",
+    "morgan": "^1.10.0",
+    "webpack-node-externals": "^2.5.2"
+  }
+}
