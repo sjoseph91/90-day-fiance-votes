@@ -6,6 +6,8 @@
     font-family: sans-serif;
     outline: none;
     text-decoration: none;
+    background-color: rgb(241, 241, 241);
+    
   }
 
   .app {
@@ -18,22 +20,27 @@
     justify-content: space-evenly;
     align-items: center;
     height: 40px;
-    background-color: #3339;
+    background-color: #1b1b1b;
+
 }
 .navbar a{
     text-decoration: none;
     color: white;
+    font-weight: bold;
     display: block;
+    background-color: black;
     padding: 5px 12px;
-    background-color: rgb(168, 168, 168);
     border-radius: 5px;
-    transition: background-color .5s ease-in;
+    transition: background-color .3s;
 }
 .navbar button{
     padding: 5px 12px;
-    background-color: rgb(192, 170, 170);
+    background-color: #404040;;
+    color: white;
     border-radius: 5px;
+    cursor: pointer;
 }
+
 .navbar a:hover {
     background-color: #4f4f4f;
     
@@ -43,38 +50,52 @@
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    background: url("https://images.unsplash.com/photo-1593186508345-95e10a863e8d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+    height: 100vh;
+    background-position: center;
 }
   
 .auth-container > h1 {
     font-size: 2em;
     margin: 24px;
+    background-color: rgba(1,1,1,0.0);
+
+    color: black;
 }
   
 .auth-container > p {
     margin: 16px;
+
     text-decoration: underline;
+    font-weight: bold;
+    color:black;
+    background-color: rgba(1,1,1,0.0);
 }
   
 .auth-container > form {
     border: 1px solid #3339;
     padding: 20px;
-    border-radius: 5px;
-    background-color: #aaa9;
-  
+    border-radius: 10%;
+    background-color: rgba(1,1,1,0.0);;
+    color: white;
     display: flex;
     flex-direction: column;
+    
 }
   
 .auth-container > form > input {
     margin: 16px 8px;
     padding: 8px;
-    border-radius: 4px;
+    border-radius: 10px;
+    background-color: #e4e4e4;
+
 }
   
 .auth-container > form > button {
     margin: 16px 8px;
     padding: 8px;
-    border-radius: 4px;
+    border-radius: 10px;
+    background-color: rgba(1,1,1,0.0);
 }
 
 /* homepage */
@@ -86,7 +107,8 @@
 }
 .IssueList {
 
-    width: 75%;
+    max-width: 75%;
+    min-width: 400px;
     display: block;
     margin: 0 auto;
 }
@@ -102,16 +124,14 @@
     
     border-bottom: 1px solid #b9b9b9;
     width: 100%;
-    content: "";
-    clear: both;
-    display: table;
+    display: flex;
     margin-bottom: 15px;
-    max-height: 200px;
+
 }
 .issue > .container{
-    max-width: 200px;
-    min-width: 150px;
-    float: left;
+    flex-basis: 20%;
+    overflow: hidden;
+    
     
 }
 .issue h2 {
@@ -119,6 +139,8 @@
 }
 .issue > .container img{
     width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 .issue > .text{
     padding: 0px 15px;
@@ -149,7 +171,10 @@
 }
 #add-comment-form input {
     padding: 2px 5px;
+    border-radius: 10px;
+
     width: 90%;
+    
 
 }
 #add-comment-form div{
@@ -159,7 +184,9 @@
 #add-comment-form button {
     padding: 2px 5px;
     width: 100%;
-
+    border-radius: 10px;
+    background-color: #3636ff;
+    color: white;
    
 }
 .comments p{
@@ -182,5 +209,13 @@
 }
 .addNewPost form input{
     padding: 3px 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.addNewPost form button {
+    border-radius: 10px;
+    background-color: #3636ff;
+    color: white;
+    padding: 3px 5px;
 }

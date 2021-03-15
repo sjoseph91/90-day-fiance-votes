@@ -35,7 +35,7 @@ export default function Auth(){
 
   return (
     <div className="auth-container">
-      <h1>90 Day Fiance Fan Page</h1>
+      <h1>90 Day Fiance Gossip</h1>
       { !toggle ?
         <>
           <AuthForm 
