@@ -1,5 +1,7 @@
 import React, { useContext, useState }from 'react';
 import { IssueContext} from "../context/IssueProvider"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons'
 
 function LikesComponent(props){
     const {sendUpvote, sendDownVote} = useContext(IssueContext);
@@ -29,10 +31,18 @@ function LikesComponent(props){
     }
     return (
         <div className="likes">
-            <button onClick={upvote}>Upvote</button>
-            <button onClick={downvote}>Downvote</button>
-            <br></br>
             <h4>Likes: {currentVotes}</h4>
+            <div className="icons">
+                <i 
+                onClick={upvote}
+                id="like-button"><FontAwesomeIcon icon={faThumbsUp} /></i>
+                <i 
+                onClick={downvote}
+                id="dislike-button"><FontAwesomeIcon icon={faThumbsDown} /></i>
+            </div>
+            
+            
+            
             {errMessage}
 
         </div>

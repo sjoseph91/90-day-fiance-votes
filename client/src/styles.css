@@ -6,7 +6,7 @@
     font-family: sans-serif;
     outline: none;
     text-decoration: none;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(226, 243, 253);
     
   }
 
@@ -42,7 +42,7 @@
 }
 
 .navbar a:hover {
-    background-color: #4f4f4f;
+    background-color: #3636ff ;
     
 }
 .auth-container {
@@ -118,7 +118,12 @@
     padding: 5px 10px;
     border-radius: 15px;
     margin-bottom: 20px;
+    background-color: rgb(252, 252, 252);
 }
+.issue-container * {
+    background-color: rgb(252, 252, 252);
+}
+
 
 .issue{
     
@@ -126,6 +131,8 @@
     width: 100%;
     display: flex;
     margin-bottom: 15px;
+    
+
 
 }
 .issue > .container{
@@ -136,6 +143,7 @@
 }
 .issue h2 {
     margin-bottom: 10px;
+    font-size: 20px;
 }
 .issue > .container img{
     width: 100%;
@@ -146,15 +154,49 @@
     padding: 0px 15px;
     width: 65%;
     float: left;
+    
+}
+.issue > .text p {
+    padding: 10px 0px;
 }
 .issue > .likes{
     width: 20%;
-    float: left;
-}
-.likes button {
-    margin-bottom: 3px;
-}
 
+}
+.issue > .likes h4 {
+    text-align: right;
+}
+div.icons {
+    display: flex;
+    justify-content: space-between;
+}
+#like-button {
+    color: #3636ff;
+    font-size: 5vw;
+    cursor: pointer;
+}
+#like-button:hover {
+    transform: translateY(-5px);
+}
+#dislike-button:hover {
+    transform: translateY(5px);
+    
+}
+div.icons i:hover {
+    font-size: 5.4vw;
+}
+#dislike-button {
+
+    color: grey;
+    font-size: 5vw;
+    cursor: pointer;
+}
+.profile h1 {
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 30px;
+
+}
 
 .comments {
     padding: 2px;
